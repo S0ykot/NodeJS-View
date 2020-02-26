@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login V15</title>
+	<title>Login</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -31,65 +31,48 @@
 	
 	<div class="limiter">
 		<div class="container-login100">
-			<div class="wrap-login101">
+			<div class="wrap-login100">
 				<div class="login100-form-title" style="background-image: url(images/unnamed.jpg);">
 					<span class="login100-form-title-1">
-						REGISTER
+						Sign In
 					</span>
 				</div>
 
-				<form class="login101-form validate-form">
-					<div class="wrap-input100 validate-input m-b-26" data-validate="Academic Id is required">
-						<input class="input100" type="text" name="userId" placeholder="Enter Academic ID">
+				<form class="login100-form validate-form" method="POST">
+					<div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+						<input class="input100" type="text" name="uname" placeholder="Enter username">
 						<span class="focus-input100"></span>
 					</div>
 
-					<div class="wrap-input100 validate-input m-b-18" data-validate = "First Name is required">
-						<input class="input100" type="text" name="fname" placeholder="Enter First Name">
+					<div class="wrap-input100 validate-input m-b-18" data-validate = "Password is required">
+						<input class="input100" type="password" name="password" placeholder="Enter password">
 						<span class="focus-input100"></span>
 					</div>
 
-					<div class="wrap-input100 validate-input m-b-26" data-validate="Last Name is required">
-						<input class="input100" type="text" name="lname" placeholder="Enter Last Name">
-						<span class="focus-input100"></span>
-					</div>
+					<div class="flex-sb-m w-full p-b-30">
+						<div class="contact100-form-checkbox">
+							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+							<label class="label-checkbox100" for="ckb1">
+								Remember me
+							</label>
+						</div>
 
-					<div class="wrap-input100 validate-input m-b-18" data-validate = "Email is required">
-						<input class="input100" type="text" name="email" placeholder="Enter Valid Email">
-						<span class="focus-input100"></span>
+						<div>
+							<a href="#" class="txt1">
+								Forgot Password?
+							</a>
+						</div>
 					</div>
-
-					<div class="wrap-input100 validate-input m-b-18" data-validate = "Contact No. is required">
-						<input class="input100" type="text" name="phnNo" placeholder="Enter Contact Number">
-						<span class="focus-input100"></span>
-					</div>
-
-					<div class="wrap-input100 validate-input m-b-26" data-validate="CGPA is required">
-						<input class="input100" type="text" name="cgpa" placeholder="Enter CGPA">
-						<span class="focus-input100"></span>
-					</div>
-
-					<div class="wrap-input100 validate-input m-b-18" data-validate = "Department is required">
-						<input class="input100" type="text" name="dept" placeholder="Enter Department">
-						<span class="focus-input100"></span>
-					</div>
-
-					<div class="wrap-input100 validate-input m-b-26" data-validate="Credit is required">
-						<input class="input100" type="text" name="credit" placeholder="Credit Completed (After This Semester)">
-						<span class="focus-input100"></span>
-					</div>
-
-					
 
 					<div id="login100-form-Btn">
-						<button class="login101-form-btn">
-							Sign Up
+						<button class="login100-form-btn">
+							Login
 						</button>
 					</div>
 
-					<div id="Login-100">
+					<div id="reg-100">
 						<div>
-							<a href="login.html" class="txt1">Already Registered?</a>
+							<a href="reg.html" class="txt1">Not Registered Yet?</a>
 						</div>
 					</div>
 				</form>
