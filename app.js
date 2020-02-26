@@ -14,6 +14,7 @@ var profile			= require('./controllers/TeacherProfile');
 var appvStudent 	= require('./controllers/TeacherStudentApproval');
 var studentList		= require('./controllers/TeacherStudentDetails');
 var addTopic		= require('./controllers/TeacherTopicAdd');
+var viewTopic		= require('./controllers/TeacherViewTopic');
 
 
 
@@ -37,6 +38,7 @@ app.use('/TeacherProfile',profile);
 app.use('/TeacherStudentApproval',appvStudent);
 app.use('/TeacherStudentDetails',studentList);
 app.use('/TeacherTopicAdd',addTopic);
+app.use('/TeacherViewTopic',viewTopic);
 
 
 
